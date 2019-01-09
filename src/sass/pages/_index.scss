@@ -1,0 +1,90 @@
+.home{background: #ffffff;}
+.slider_header{
+  background: url(../img/bg_header.png) center center;
+  background-size: cover;
+  padding: 198px 0 161px 0;
+}
+.box {
+  padding-bottom: 80px;
+  .slider {
+    display: flex;
+    justify-content: center;
+    height: 146px;
+    @media screen and (min-width:1100px){
+      height: 146px;
+    }
+  }
+  .slider-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (min-width: 1100px){}
+    margin-top: -80px;
+  }
+  .www{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -100px;
+  }
+  .prev, .next {
+    display: none;
+    @media screen and (min-width:1100px){
+        display: block;
+        cursor: pointer;
+        transition: 0.75s;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+}}
+  .title{
+    color: #ffffff;
+    font-size: 36px;
+    @media screen and (min-width: 1100px){
+      margin: 0;
+      padding: 0;
+      font-family: Amsdam;
+      font-weight: 400;
+      line-height: 200.4px;
+      text-transform: uppercase;
+      letter-spacing: 0.89px;
+    }
+  }
+  .slogan{
+    color: #ffffff;
+    font-family: "Crimson Text - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1.4px;
+  }
+  .a{
+    width: 100%;
+    margin-bottom: -50px;
+  }
+  .b{
+    width: 100%;
+    margin-top: -50px;
+  }
+}
+.block_1-btn{
+  padding: 15px 26px;
+  border: 2px solid #f2f2f2;
+  color: #ffffff;
+  margin-left: 630px;
+  &:hover{
+    background: rgba(255, 255, 255, 0.5);
+    transition-duration: 1s;
+  }
+}
+.about{
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+
+
+

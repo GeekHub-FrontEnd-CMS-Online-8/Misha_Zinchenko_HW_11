@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e3e3e3;
+  .content{
+    width: 480px;
+    margin: 0 auto;
+    @media screen and (min-width:1170px){
+      width: 1170px; 
+  } }
+  a{text-decoration: none;}
+  li{list-style-type: none;}
+  h6{display: none;}
+}
+
+
+
+
+@font-face {
+    font-family: 'Amsdam Regular';
+    src: url(../fonts/Amsdam.ttf);
+}
+
+
+
+
+@import "normalize/import-now";
+
+@import 'utils/variables';
+
+@import 'base/basic';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/index';

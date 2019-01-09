@@ -1,0 +1,43 @@
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffffff;
+  img{
+    margin-top: 22px;
+  }
+  ul{
+    width: 579px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li:hover{
+      transition: 0.3s;
+      transform: scale(1.2);
+      a{
+        color: #757171;
+      }
+    }
+  }
+  a{
+    color: #aaaaaa;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  .header__link{
+    margin-top: 12px;
+    a{
+      border-right: 2px solid; 
+    }
+    img{
+      padding-right: 4px;
+    }
+  }
+}
+
+
+
+

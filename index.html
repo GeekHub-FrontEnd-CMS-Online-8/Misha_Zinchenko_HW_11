@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlantida</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="home" id="home">
+        <h6>/</h6>
+        <section class="block_1">
+            <div class="content">
+                <header>
+                    <img src="src/img/logo.png" width="176" height="33" alt="">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#prices">Prices</a></li>
+                            <li><a href="#blog_1">Blog-1</a></li>
+                            <li><a href="#blog_2">Blog-2</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__link">
+                        <a href="https://www.facebook.com"><img src="src/img/fb_header.png" alt=""></a>
+                        <a href="https://twitter.com/?lang=uk"><img src="src/img/tw_header.png" alt=""></a>
+                        <a href="https://www.behance.net/"><img src="src/img/bh_header.png" alt=""></a>
+                    </div>    
+                </header>
+            </div>     
+
+            <div class="slider_header">
+                <div class="box content">
+                    <ul class="slider">
+                        <li class="slider-item  fade">
+                            <p class="slogan">Design Studio and Digital Agency</p>
+                            <hr class="a">
+                            <p class="title">WE ARE ATLANTIDA</p>
+                            <hr class="b">
+                        </li>
+                          
+                        <li class="slider-item">
+                            <!-- <p class="title">WE ARE ATLANTIDA</p> -->
+                        </li>
+                      
+                        <li class="slider-item">
+                            <!-- <p class="title">WE ARE ATLANTIDA</p> -->
+                        </li> 
+                    </ul>
+
+                    <div class="www">
+                        <a class="prev" onclick="plusSlides(-1)">
+                            <img src="src/img/arrow_left.png" alt="">
+                        </a>
+                        <a class="next" onclick="plusSlides(1)">
+                            <img src="src/img/arrow_right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <a href="#about" class="block_1-btn">Get Started</a>
+            </div>
+        </section>
+    </div> 
+    
+    <section class="about" id="about">
+        <div class="content">
+
+        </div>
+    </section>
+
+
+<script>
+    jQuery(function($){
+    $('a[href*="#"]').on('click.smoothscroll', function( e ){
+    var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+    if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
+    var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
+    if( ! $target.length ) return;
+    e.preventDefault();
+    $('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 1000, 'swing', function(){
+    window.location.hash = hash;
+            });
+        });
+    });
+</script>
+</body>
+</html>
