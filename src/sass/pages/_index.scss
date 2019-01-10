@@ -1,7 +1,28 @@
+.up{
+  margin: 0px;
+  background: #ffffff;
+  z-index: 2;
+  position: fixed;
+  top: 500px;
+  left: 1270px;
+  a{
+    padding: 20px 20px;
+    background: #ffffff;
+    border-radius: 100px;
+    font-family: Amsdam cyr-lat;
+    color: #515151;
+    font-weight: 900;
+  }
+}
+
+
+
 .home{
   background: #ffffff;
 }
+
 // ------------- SLIDER ------------------
+
 .slider_header{
   background: url(../img/bg_header.png) center center;
   background-size: cover;
@@ -87,7 +108,9 @@
     transition-duration: 1s;
   }
 }
+
 // ------------- ABOUT ------------------
+
 .about{
   padding: 20px 0 10px 0;
   @media screen and (min-width:1100px){
@@ -104,16 +127,11 @@
     padding: 60px 0 50px 0;
     text-align: center;
     color: #3e3d3d;
-    p{
-      text-align: start;
-      padding: 40px 69px 45px 75px;
-      font-family: "Crimson Text - Roman";
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 1.4px;
-    }
     a{
-      padding: 10px 35px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
       border: 2px solid #3e3d3d;
       color: #3e3d3d;
       span{
@@ -127,6 +145,15 @@
         color: #cecece;
       }
     }
+    p{
+      text-align: start;
+      padding: 40px 69px 45px 75px;
+      font-family: "Crimson Text - Roman";
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.4px;
+    }
+    
   }
   &__example{
     display: flex;
@@ -163,7 +190,9 @@
     }
   }
 }
+
 // ------------- SERVICES ------------------
+
 .services{
   padding: 15px 0 20px 0;
   background: url(../img/bg_services.png) center center;
@@ -249,7 +278,9 @@
     }
   }
 }
+
 // ------------- HISTORY ------------------
+
 .history{
   padding: 10px 0 10px 0;
   text-align: center;
@@ -265,7 +296,9 @@
     letter-spacing: 1.4px;
   }
 }
+
 // ------------- TEAM ------------------
+
 .team{
   padding: 10px 0 10px 0;
   text-align: center;
@@ -353,7 +386,137 @@
   }
 }
 
+// ------------- PORTFOLIO ------------------
 
+.portfolio{
+  text-align: center;
+  padding: 70px 0 0px 0;
+  &__menu{
+    padding-top: 50px;
+    padding-bottom: 64px;
+    a{
+      padding: 5px 10px;
+      border: 2px solid #3e3d3d;
+      color: #3e3d3d;
+      span{
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      &:hover{
+        transition-duration: 0.8s;
+        background: #3e3d3d;
+        color: #ffffff;
+      }
+    }
+  }
+  &__work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // &__1{}
+    // &__2{}
+    // &__3{}
+    // &__4{}
+    // &__5{}
+    // &__6{}
+    // &__7{}
+    // &__8{}
+  }
+}
 
+// ------------- PRICES ------------------
+
+.prices{
+  padding: 70px 0 90px 0;
+  text-align: center;
+  &__block{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width:1100px){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__buy{
+      width: 369px;
+      height: 551px;
+      background: #ffffff;
+      padding-top: 45px;
+      text-align: center;
+      margin-top: 5px;
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 67px;
+        width: 232px;
+        .ddd{
+          margin-top: -30px;
+          margin-bottom: 50px;
+          color: #3e3d3d;
+          font-family: "Crimson Text";
+          font-size: 16px;
+          font-style: italic;
+          line-height: 30px;
+        }
+        .value{
+          color: #3e3d3d;
+          font-family: Montserrat;
+          font-size: 50px;
+          font-weight: 700;
+        }
+        p{
+          img{
+            border: 2px solid #3e3d3d;
+            padding: 14px 18px 16px 18px;
+            border-radius: 30px;
+          }
+        }
+        .img{
+          overflow: hidden;
+        &:before,
+        &:after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          margin-top: -40px;
+          width: 100%;
+          height: 2px;
+          background: #898989;
+          border: 2px solid #898989;
+          border-width: 0 10px;
+        }
+        &:before {
+            margin-left: -100%;
+          }
+        &:after {
+            margin-right: -100%;
+          }
+        }
+        a{
+          padding-top: 14px;
+          padding-bottom: 12px;
+          border: 2px solid #3e3d3d;
+          color: #3e3d3d;
+          span{
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+          }
+          &:hover{
+            transition-duration: 1s;
+            background: #3e3d3d;
+            color: #cecece;
+          }
+        }
+      }
+    }
+  }
+}
 
 
