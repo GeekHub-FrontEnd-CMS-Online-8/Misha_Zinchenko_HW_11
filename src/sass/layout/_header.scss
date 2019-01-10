@@ -8,15 +8,18 @@ header{
   }
   ul{
     width: 579px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
     li:hover{
       transition: 0.3s;
       transform: scale(1.2);
       a{
         color: #757171;
       }
+    }
+    @media screen and (min-width:1100px){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   a{
