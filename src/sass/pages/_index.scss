@@ -85,8 +85,10 @@
   }
 }
 .about{
-  padding-top: 70px;
-  padding-bottom: 60px;
+  padding: 20px 0 10px 0;
+  @media screen and (min-width:1100px){
+    padding: 70px 0 60px 0;
+  }
   &__header{
     height: 325px;
     background: url(../img/bg_about.png) center center;
@@ -127,11 +129,20 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 36px;
+    margin-top: 10px;
     .border_r{border-right: 1px solid #b0b0b0;}
+    .border_rr{border-right: none;}
+    @media screen and (min-width:1100px){
+      .border_rr{border-right: 1px solid #b0b0b0;}
+      margin-top: 36px;
+    }
     &__item{
-      width: 270px;
+      width: 239px;
       text-align: center;
+      margin-top: 20px;
+      @media screen and (min-width:1100px){
+        width: 270px;
+      }
       p{
         color: #3e3d3d;
         font-family: Montserrat;
@@ -148,16 +159,90 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
+.services{
+  padding: 15px 0 20px 0;
+  background: url(../img/bg_services.png) center center;
+  background-size: cover;
+  text-align: center;
+  @media screen and (min-width:1100px){
+    padding: 69px 0 85px 0;
+  }
+  h2{color: #ffffff;}
+  p{
+    padding-top: 40px;
+    color: #cfcfcf;
+    font-family: "Crimson Text - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+  }
+  &__skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__block{
+      width: 235px;
+      @media screen and (min-width:1100px){
+        width: 270px;
+      }
+      p{
+        img{
+          padding: 0 18px 0 18px;
+        }
+      }
+      .img{
+        overflow: hidden;
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin-top: -15px;
+        width: 100%;
+        height: 2px;
+        background: #898989;
+        border: 2px solid #898989;
+        border-width: 0 10px;
+      }
+      &:before {
+          margin-left: -100%;
+        }
+      &:after {
+          margin-right: -100%;
+        }
+      }
+      div{
+        position: relative;
+        border-left: 2px solid #898989;
+        border-right: 2px solid #898989;
+        border-bottom: 2px solid #898989;
+        padding: 58px 35px 44px 35px;
+        top: -33px;
+        color: #d8d8d8;
+        @media screen and (min-width:1100px){
+          
+        }
+        span{
+          font-family: Montserrat;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+          text-transform: uppercase;
+          letter-spacing: 1.47px;
+        }
+        p{
+          font-family: Crimson Text;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20.31px;
+          letter-spacing: 1.4px;
+        }
+      }
+    }
+  }
+}
 
 
