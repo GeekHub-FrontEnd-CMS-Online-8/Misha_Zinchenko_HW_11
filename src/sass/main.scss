@@ -10,6 +10,12 @@ body{
   } }
   a{text-decoration: none;}
   li{list-style-type: none;}
+  h2{
+    font-family: Amsdam cyr-lat;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
   h6{display: none;}
 }
 
@@ -17,9 +23,21 @@ body{
 
 
 @font-face {
-    font-family: 'Amsdam Regular';
-    src: url(../fonts/Amsdam.ttf);
+  font-family: 'Amsdam RegularSVG';
+  src: url('Amsdam Regular.svg#Amsdam Regular') format('svg');
 }
+
+@font-face {
+  font-family: 'Amsdam RegularTTF';
+  src: url('Amsdam Regular.ttf') format('truetype');
+} 
+
+@font-face {
+  font-family: 'Amsdam RegularEOT';
+  src: url('Amsdam Regular.eot');
+} 
+
+
 
 
 
