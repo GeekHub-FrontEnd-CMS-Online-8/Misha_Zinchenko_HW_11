@@ -698,8 +698,9 @@
     }
     address{
       width: 361px;
+      text-align: center;
       @media screen and (min-width:1100px){
-        text-align: center;
+        text-align: unset;
       }
       p{
         padding-top: 40px;
@@ -735,8 +736,10 @@
   }
 }
 form{
+  margin-top: 10px;
   @media screen and (min-width:1100px){
     margin-top: 70px;
+    margin-left: 36px;
   }
   .form__text, .form__email{
     width: 100%;
